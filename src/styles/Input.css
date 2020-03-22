@@ -1,0 +1,87 @@
+.input {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input form label {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  min-width: 350px;
+}
+
+.input form label input {
+  /* flex-basis: 70%; */
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgba(3, 74, 166, 1);
+  color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+.input form label input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 0 #222;
+}
+
+.input form label button {
+  flex-grow: 1;
+  display: block;
+  height: 100%;
+  /* font-size: 30px; */
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(3, 74, 166, 1);
+  font-size: 20px;
+  font-family: "Baloo Chettan 2", cursive;
+  transition: 0.1s;
+  color: rgb(165, 165, 74);
+  font-weight: bold;
+}
+
+.input form label button:active {
+  background-color: rgba(3, 74, 166, 0.4);
+  color: yellow;
+  box-shadow: 0 0 2px 0 #222;
+}
+
+.input form label button:focus {
+  outline: none;
+}
+
+@media (max-width: 759px) {
+  .input form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30px;
+    min-width: 280px;
+    width: 80%;
+  }
+  .input form label input {
+    display: block;
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgba(3, 74, 166, 1);
+  }
+  .input form label button {
+    display: block;
+    margin-top: 20px;
+    height: 45px;
+    line-height: 30px;
+    width: 100px;
+    border: 2px solid rgba(3, 74, 166, 1);
+  }
+}
+@media (max-width: 860px) and (orientation: landscape) {
+  .input {
+    /* position: static; */
+    top: 50%;
+    left: 30%;
+  }
+}

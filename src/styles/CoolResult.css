@@ -1,0 +1,136 @@
+.coolResult {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+  color: antiquewhite;
+  font-family: "Baloo Chettan 2", cursive;
+  --aniTime: 1.2s;
+  --aniDelay: 0.1s;
+}
+
+.coolResult span {
+  position: relative;
+  display: block;
+}
+
+.coolResult h1 {
+  opacity: 0;
+  left: -35%;
+  position: relative;
+  white-space: nowrap;
+}
+.coolResult h1 span {
+  position: relative;
+  display: inline;
+
+  text-transform: capitalize;
+}
+
+.coolResult h1 span + span {
+  text-transform: lowercase;
+}
+.coolResult h1 .last {
+  margin-right: 10px;
+}
+
+.coolResult.active h1 {
+  -webkit-animation: show ease-out var(--aniTime) forwards;
+  -webkit-animation: show ease-out var(--aniTime) forwards;
+  -webkit-animation: show ease-out var(--aniTime) forwards;
+}
+.coolResult.active > span:nth-child(2) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 1)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 1)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 1) forwards;
+}
+.coolResult.active > span:nth-child(3) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 2)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 2)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 2) forwards;
+}
+.coolResult.active > span:nth-child(4) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 3)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 3)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 3) forwards;
+}
+.coolResult.active > span:nth-child(5) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 4)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 4)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 4) forwards;
+}
+.coolResult.active > span:nth-child(6) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 5)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 5)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 5) forwards;
+}
+.coolResult.active > span:nth-child(7) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 6)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 6)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 6) forwards;
+}
+.coolResult.active > span:nth-child(8) {
+  opacity: 0;
+  left: -35%;
+  -webkit-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 7)
+    forwards;
+  -moz-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 7)
+    forwards;
+  -ms-animation: show ease-out var(--aniTime) calc(var(--aniDelay) * 7) forwards;
+}
+
+@media (max-width: 640px) {
+  .coolResult {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+@media (max-width: 860px) and (orientation: landscape) {
+  .coolResult {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    min-width: 210px;
+  }
+  .coolResult h1 .last {
+    margin-right: 0px;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    left: -35%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}

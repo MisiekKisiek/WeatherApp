@@ -1,0 +1,28 @@
+.result > h1:first-child {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: antiquewhite;
+  font-family: "Baloo Chettan 2", cursive;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .result > h1:first-child {
+    width: 80%;
+    top: 50%;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+@media (max-width: 860px) and (orientation: landscape) {
+  .result > h1:first-child {
+    width: 30%;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    text-align: center;
+  }
+}

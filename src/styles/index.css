@@ -1,0 +1,18 @@
+/* font-family: "Baloo Chettan 2", cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/tear.jpg");
+  background-color: rgba(30, 14, 121, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+}
