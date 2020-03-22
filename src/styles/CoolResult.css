@@ -13,6 +13,8 @@
 .coolResult span {
   position: relative;
   display: block;
+  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .coolResult h1 {
@@ -24,8 +26,12 @@
 .coolResult h1 span {
   position: relative;
   display: inline;
-
+  font-size: 3rem;
   text-transform: capitalize;
+}
+
+.coolResult h1 i {
+  font-size: 3rem;
 }
 
 .coolResult h1 span + span {
@@ -108,6 +114,17 @@
   .coolResult {
     position: absolute;
     top: 50%;
+  }
+}
+
+@media (max-width: 860px) {
+  .coolResult h1 span,
+  .coolResult h1 i {
+    font-size: 2rem;
+  }
+
+  .coolResult span {
+    font-size: 1rem;
   }
 }
 
