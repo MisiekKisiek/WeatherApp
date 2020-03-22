@@ -31,7 +31,7 @@ class App extends Component {
       active: ""
     });
     e.preventDefault();
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.choosenCity}&appid=94db56f27673f6979fd810e386b6e61a`;
+    const API = `//api.openweathermap.org/data/2.5/weather?q=${this.state.choosenCity}&appid=94db56f27673f6979fd810e386b6e61a`;
     fetch(API)
       .then(response => {
         if (response.ok) {
