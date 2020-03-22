@@ -19,11 +19,11 @@ const CoolResults = props => {
     <div className={`coolResult ${props.conditions.active}`}>
       <h1>
         {city.length > 12 ? (
-          <span class="last">This city</span>
+          <span className="last">This city</span>
         ) : (
           <>
             <span>{city[0]}</span>
-            <span class="last">{txt}</span>
+            <span className="last">{txt}</span>
           </>
         )}
         {"  "}
@@ -45,7 +45,7 @@ const CoolResults = props => {
       <span>
         Temperature:{" "}
         <strong>
-          {Math.round(temp - 273.15)} <i class="fas fa-genderless"></i>C
+          {Math.round(temp - 273.15)} <i className="fas fa-genderless"></i>C
         </strong>
       </span>
       <span>

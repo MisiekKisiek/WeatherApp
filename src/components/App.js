@@ -31,7 +31,7 @@ class App extends Component {
       active: ""
     });
     e.preventDefault();
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.choosenCity}&appid=c017826bad2cbbc375546e21b208d605`;
+    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.choosenCity}&appid=94db56f27673f6979fd810e386b6e61a`;
     fetch(API)
       .then(response => {
         if (response.ok) {
@@ -42,7 +42,6 @@ class App extends Component {
       })
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         const date = new Date();
         const curDate = `${
           date.getDay() < 10 ? "0" + date.getDay() : date.getDay()
@@ -70,7 +69,7 @@ class App extends Component {
         }));
       })
       .catch(err => {
-        console.log(err);
+        alert(`Error ${err}`);
         this.setState({
           err: true
         });
