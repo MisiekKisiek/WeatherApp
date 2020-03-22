@@ -69,7 +69,7 @@ class App extends Component {
         }));
       })
       .catch(err => {
-        alert(`Error ${err}`);
+        console.log(err);
         this.setState({
           err: true
         });
