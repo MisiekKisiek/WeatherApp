@@ -8,7 +8,7 @@
 .input form label {
   display: flex;
   flex-direction: row;
-  height: 30px;
+  height: 40px;
   min-width: 350px;
 }
 
@@ -19,7 +19,7 @@
   border: none;
   border: 1px solid rgba(3, 74, 166, 1);
   color: yellow;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   font-family: "Baloo Chettan 2", cursive;
 }
