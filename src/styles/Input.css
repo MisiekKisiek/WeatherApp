@@ -32,6 +32,7 @@
 .input form label button {
   flex-grow: 1;
   display: block;
+  width: 95px;
   height: 100%;
   /* font-size: 30px; */
   background-color: transparent;
@@ -74,7 +75,7 @@
     margin-top: 20px;
     height: 45px;
     line-height: 30px;
-    width: 100px;
+    width: 95px;
     border: 2px solid rgba(3, 74, 166, 1);
   }
 }

@@ -16,7 +16,8 @@ class App extends Component {
     wind: "",
     clouds: "",
     active: "",
-    err: ""
+    err: "",
+    a: ""
   };
 
   handleInputChange = e => {
@@ -43,10 +44,13 @@ class App extends Component {
       .then(response => response.json())
       .then(data => {
         const date = new Date();
+        this.state.a = date;
         const curDate = `${
-          date.getDay() < 10 ? "0" + date.getDay() : date.getDay()
+          date.getDate() < 10 ? "0" + date.getDate() : date.getDate()
         }.${
-          date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth()
+          date.getMonth() < 10
+            ? "0" + (date.getMonth() + 1)
+            : date.getMonth() + 1
         }.${date.getFullYear()}`;
         const curTime = `${
           date.getHours() < 10 ? "0" + date.getHours() : date.getHours()
@@ -74,6 +78,7 @@ class App extends Component {
           err: true
         });
       });
+    console.log(this.state.a);
   };
 
   render() {
